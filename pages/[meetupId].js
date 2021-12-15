@@ -1,5 +1,4 @@
 import MeetupList from '../components/meetups/MeetupList'
-import Layout from '../components/layout/Layout'
 
 const DUMMY_MEETUPS = [
     {
@@ -20,12 +19,10 @@ const DUMMY_MEETUPS = [
 ]
 
 
-const Index = () => {
+const meetupIndex = () => {
     return (
-        <Layout>
-            <MeetupList meetups={DUMMY_MEETUPS}/>
-        </Layout>
+        <MeetupList meetups={DUMMY_MEETUPS}/>
     )
 }
 
-export default Index
+export default meetupIndex
