@@ -19,11 +19,21 @@ const DUMMY_MEETUPS = [
 ]
 
 
-const Index = () => {
+const Index = (props) => {
+
     return (
         
-        <MeetupList meetups={DUMMY_MEETUPS}/>
+        <MeetupList meetups={props.meetups}/>
     )
+}
+
+export async function getStaticProps(){
+    //fetch data from an API
+    return {
+        props:{
+            meetups: DUMMY_MEETUPS
+        }
+    };
 }
 
 export default Index
