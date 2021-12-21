@@ -1,6 +1,6 @@
 //api/new-meetup
 
-import MeetupDetail from "../../components/meetups/MeetupDetail";
+import { MongoClient } from 'mongodb'
 
 function handler(req, res) {
     if (req.method === 'POST'){
